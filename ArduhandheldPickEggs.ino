@@ -21,7 +21,7 @@ void setup()
 	arduboy.begin();
 	// 設定每秒15 FPS更新率.
 	arduboy.setFrameRate(30);
-	// 初始蛋管理器.
+	// 初始遊戲管理器.
 	gameManager.init(&arduboy, &sound);
 }
 
@@ -35,7 +35,7 @@ void loop()
 		return;
 	// 將畫面清為黑色.
 	arduboy.clear();
-	// 更新蛋管理器.
+	// 更新遊戲管理器.
 	gameManager.update();
 	// 更新畫面.
 	arduboy.display();
